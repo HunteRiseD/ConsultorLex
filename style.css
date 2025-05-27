@@ -3,10 +3,10 @@ body {
     background: linear-gradient(45deg, #fff8f5, #f7d8e3);
     color: #333;
     margin: 0;
-    padding: 10px;
+    padding: 10px; /* Adicionado padding */
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    flex-direction: column; /* Alterado para column */
+    justify-content: flex-start; /* Alterado para flex-start */
     align-items: center;
     min-height: 100vh;
     transition: background 0.3s, color 0.3s;
@@ -77,16 +77,14 @@ body {
     z-index: 1;
     transition: background 0.3s, box-shadow 0.3s;
     width: 90%;
-    max-width: 95%; /* Aumenta o max-width */
     box-sizing: border-box;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 20px; /* Adicionado margem superior */
+    margin-bottom: 20px; /* Adicionado margem inferior */
 }
 
 .profile-pic {
-    width: 30%; /* Ajustado para porcentagem */
-    max-width: 150px;
-    height: auto;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 20px;
@@ -99,7 +97,7 @@ body {
 }
 
 h1 {
-    font-size: 24px; /* Reduzido o tamanho da fonte */
+    font-size: 28px;
     margin-bottom: 15px;
     color: #b85c7d;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
@@ -107,7 +105,7 @@ h1 {
 }
 
 p {
-    font-size: 15px; /* Reduzido o tamanho da fonte */
+    font-size: 16px;
     line-height: 1.6;
     margin-bottom: 25px;
     transition: color 0.3s;
@@ -117,7 +115,7 @@ p {
     display: block;
     width: 100%;
     margin: 15px 0;
-    padding: 12px; /* Reduzido o padding */
+    padding: 15px;
     text-decoration: none;
     font-weight: bold;
     border-radius: 30px;
@@ -131,7 +129,6 @@ p {
     color: #000;
     background-color: #f7d8e3;
     box-sizing: border-box;
-    font-size: 15px; /* Reduzido o tamanho da fonte */
 }
 
 .btn:hover {
@@ -183,4 +180,34 @@ p {
     color: #fff;
 }
 
-/* Media query removida */
+/* Media query para telas menores */
+@media (max-width: 600px) {
+    body {
+        padding: 10px; /* Adicionado padding ao body */
+    }
+
+    .container {
+        padding: 20px;
+        width: 95%;
+        margin-top: 10px; /* Reduzido margem superior */
+        margin-bottom: 10px; /* Reduzido margem inferior */
+    }
+
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .btn {
+        padding: 12px;
+        font-size: 15px;
+    }
+}
