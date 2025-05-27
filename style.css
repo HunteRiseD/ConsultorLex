@@ -3,7 +3,7 @@ body {
     background: linear-gradient(45deg, #fff8f5, #f7d8e3);
     color: #333;
     margin: 0;
-    padding: 0;
+    padding: 10px; /* Adicionado padding */
     display: flex;
     flex-direction: column; /* Alterado para column */
     justify-content: flex-start; /* Alterado para flex-start */
@@ -182,15 +182,11 @@ p {
 
 /* Media query para telas menores */
 @media (max-width: 600px) {
-    body {
-        padding: 10px; /* Adicionado padding ao body */
-    }
-
     .container {
         padding: 20px;
         width: 95%;
-        margin-top: 10px; /* Reduzido margem superior */
-        margin-bottom: 10px; /* Reduzido margem inferior */
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
     .profile-pic {
