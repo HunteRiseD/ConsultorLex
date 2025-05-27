@@ -39,7 +39,6 @@ body {
     background-color: #d47899;
 }
 
-/* Estilo específico para o WhatsApp no modo escuro */
 .dark-mode .whatsapp {
     background-color: #388e3c;
 }
@@ -48,13 +47,12 @@ body {
     background-color: #43a047;
 }
 
-/* Estilos para as partículas */
 .particle {
     position: absolute;
     border-radius: 50%;
     pointer-events: none;
     animation: particleAnimation 5s linear infinite;
-    background-color: rgba(244, 205, 217, 0.6); /* Cor das partículas no modo claro */
+    background-color: rgba(244, 205, 217, 0.6);
 }
 
 @keyframes particleAnimation {
@@ -133,7 +131,6 @@ p {
     background-color: #f4cdd9;
 }
 
-/* Estilo específico para o WhatsApp no modo claro */
 .whatsapp {
     background-color: #4CAF50;
     color: white;
@@ -147,7 +144,6 @@ p {
     margin-right: 8px;
 }
 
-/* Estilos para o botão de tema */
 #theme-toggle {
     position: absolute;
     top: 20px;
@@ -173,8 +169,33 @@ p {
     color: #f0c2d1;
 }
 
-/* Corrigindo a cor dos links visitados no modo escuro */
 .dark-mode .btn:link,
 .dark-mode .btn:visited {
     color: #fff;
+}
+
+/* Media query para telas menores */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .btn {
+        padding: 12px;
+        font-size: 15px;
+    }
 }
