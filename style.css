@@ -80,6 +80,7 @@ body {
     box-sizing: border-box;
     margin-top: 20px; /* Adicionado margem superior */
     margin-bottom: 20px; /* Adicionado margem inferior */
+    position: relative; /* Adicionado para posicionar o botão dentro */
 }
 
 .profile-pic {
