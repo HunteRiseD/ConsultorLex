@@ -3,10 +3,10 @@ body {
     background: linear-gradient(45deg, #fff8f5, #f7d8e3);
     color: #333;
     margin: 0;
-    padding: 0; /* Removido padding */
+    padding: 10px; /* Adicionado padding */
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    flex-direction: column; /* Alterado para column */
+    justify-content: flex-start; /* Alterado para flex-start */
     align-items: center;
     min-height: 100vh;
     transition: background 0.3s, color 0.3s;
@@ -32,10 +32,12 @@ body {
 .dark-mode .btn {
     box-shadow: 0 4px 6px rgba(255,255,255,0.1);
     color: #fff;
+    background-color: #c66a8b;
 }
 
 .dark-mode .btn:hover {
     box-shadow: 0 6px 8px rgba(255,255,255,0.15);
+    background-color: #d47899;
 }
 
 .dark-mode .whatsapp {
@@ -51,6 +53,7 @@ body {
     border-radius: 50%;
     pointer-events: none;
     animation: particleAnimation 5s linear infinite;
+    background-color: rgba(244, 205, 217, 0.6);
 }
 
 @keyframes particleAnimation {
@@ -64,13 +67,9 @@ body {
     }
 }
 
-.particle {
-    background-color: rgba(244, 205, 217, 0.6);
-}
-
 .container {
     max-width: 480px;
-    padding: 40px; /* Aumentado padding */
+    padding: 20px;
     background: rgba(255, 255, 255, 0.9);
     border-radius: 20px;
     box-shadow: 0 0 30px rgba(0,0,0,0.2);
@@ -79,8 +78,9 @@ body {
     transition: background 0.3s, box-shadow 0.3s;
     width: 90%;
     box-sizing: border-box;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 20px; /* Adicionado margem superior */
+    margin-bottom: 20px; /* Adicionado margem inferior */
+    position: relative; /* Adicionado para posicionar o botão dentro */
 }
 
 .profile-pic {
@@ -127,12 +127,15 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #000;
+    background-color: #f7d8e3;
     box-sizing: border-box;
 }
 
 .btn:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+    background-color: #f4cdd9;
 }
 
 .whatsapp {
